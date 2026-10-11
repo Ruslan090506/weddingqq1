@@ -1,0 +1,14 @@
+{
+  "name": "friends-included-finance",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env scripts/server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "build": "node scripts/check.mjs",
+    "demo:seed": "node --env-file-if-exists=.env scripts/seed-local.mjs",
+    "telegram:setup": "node --env-file-if-exists=.env scripts/setup-telegram.mjs"
+  }
+}
